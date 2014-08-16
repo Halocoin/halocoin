@@ -1,0 +1,9 @@
+Building SoleCoin
+
+See doc/readme-qt.rst for instructions on building SoleCoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of SoleCoin.
+
+See doc/build-*.txt for instructions on building SoleCoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of SoleCoin.
