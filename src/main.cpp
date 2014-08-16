@@ -942,17 +942,17 @@ int64 GetProofOfWorkReward(int nHeight, int64 nFees, uint256 prevHash)
     int64_t nSubsidy = 0 * COIN;
 
      if(nHeight == 1  ) nSubsidy = 500000 * COIN;
-else if(nHeight < 200) nSubsidy = 0 * COIN;
-else if(nHeight < 10200) nSubsidy = 10 * COIN;
-else if(nHeight < 20200) nSubsidy = 9 * COIN;
-else if(nHeight < 30200) nSubsidy = 8 * COIN;
-else if(nHeight < 40200) nSubsidy = 7 * COIN;
-else if(nHeight < 50200) nSubsidy = 6 * COIN;
-else if(nHeight < 60200) nSubsidy = 5 * COIN;
-else if(nHeight < 70200) nSubsidy = 4 * COIN;
-else if(nHeight < 80200) nSubsidy = 3 * COIN;
-else if(nHeight < 100200) nSubsidy = 2 * COIN;
-else if(nHeight < 120200) nSubsidy = 1 * COIN;
+else if(nHeight < 10000) nSubsidy = 1 * COIN;
+else if(nHeight < 20000) nSubsidy = 10 * COIN;
+else if(nHeight < 30000) nSubsidy = 9 * COIN;
+else if(nHeight < 40000) nSubsidy = 8 * COIN;
+else if(nHeight < 50000) nSubsidy = 7 * COIN;
+else if(nHeight < 60000) nSubsidy = 6 * COIN;
+else if(nHeight < 70000) nSubsidy = 5 * COIN;
+else if(nHeight < 80000) nSubsidy = 4 * COIN;
+else if(nHeight < 90000) nSubsidy = 3 * COIN;
+else if(nHeight < 110000) nSubsidy = 2 * COIN;
+else if(nHeight < 130000) nSubsidy = 1 * COIN;
 else if(nHeight > CUTOFF_POW_BLOCK) nSubsidy = 0 * COIN; 
     
     return nSubsidy + nFees;
